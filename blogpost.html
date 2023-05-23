@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogstylesheet.css">
+
+    <!-- Google font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/54742bbd3d.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6779a0ad67.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+           
+           <div class="nav-links">
+   
+               <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                   <ul id="navLinks">
+                       <li><a href="forside.html">FORSIDE</a></li>
+                       <li><a href="blog.html"><strong>BLOG</strong></a></li>
+                       <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                       <li><a href="forside.html"><img src="img/Hækleriet-LOGO.png"></a> </li>
+                       <li><a href="hækling101.html">HÆKLING 101</a></li>
+                       <li><a href="inspiration.html">INSPIRATION</a></li>
+                       <li><a href="kontakt.html">KONTAKT</a></li>
+                   </ul>
+           </div>
+           
+           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+       </nav>
+</section>
+
+       <!--Blog sektion-->
+       <section id="blog">
+<div class="blog-heading">
+    <div class="blog-text">
+    <span><a href="blog.html"> <br> Blog </a> / Vælg det perfekte garn: En guide </span>
+</div>
+<div class="blogtitle">
+    <h3>Vælg det perfekte garn: En guide!</h3>
+    </div>
+</div>
+    <div class="row">
+        <div class="video-col">
+              <p>  
+                <br>  Farvevalg: Farverne kan gøre en stor forskel i dit hækleprojekt. Overvej, om du ønsker et ensfarvet eller flerfarvet garn. Hvilken farvepalet passer bedst til det, du vil opnå? Du kan også eksperimentere med farveovergange, ombré-effekter eller farveskiftende garn for at tilføje visuel interesse til dit projekt. <br>
+                  
+                 <br> Garnets kvalitet: Kvaliteten af garnet er vigtig for at opnå et smukt og holdbart resultat. Vælg garn af god kvalitet, der er vævet eller spundet jævnt, uden ujævnheder eller knuder. Læs anmeldelser, eller få anbefalinger fra erfarne hæklere eller garnbutikker for at finde pålidelige mærker og producenter. <br>
+                  
+                 <br> Budget: Overvej dit budget, når du vælger garn. Priserne kan variere meget afhængigt af mærke, kvalitet og fiberindhold. Der er gode garnmuligheder i alle prisklasser, så det handler om at finde det, der passer til din økonomi. <br>
+                  
+                <br>  Prøvehækling: Hvis det er muligt, prøvehækl en lille prøvestrik med det valgte garn for at se, hvordan det ser ud og føles i din hækleteknik. Det kan hjælpe dig med at afgøre, om garnet opfylder dine forventninger til fasthed, struktur og udseende. <br>
+                  
+                 <br> Erfaringer og anbefalinger: Spørg andre hæklere om deres erfaringer og anbefalinger til garn. Dette kan være gennem hæklecommunities, online fora eller sociale mediegrupper. Hæklere deler ofte glædeligt deres viden og kan give dig værdifulde indsigter og tips til valg af garn. <br>
+                  
+                 <br> Til sidst er det vigtigste når du vælger garn, at vælge noget der passer netop til dig! Det faktastiske ved hækling er at du kan personaliserer det ligeså meget som du har lyst til. Der er ingen begrænsinger og du skal bare lade kreativiteten tage over.  </p>
+        </div>
+
+        <div class="standard-col">
+            <h3>Hækling 101</h3>
+                <p>Velkommen til Hækling 101! Hvis du er nysgerrig på hækling og ønsker at lære denne fantastiske håndarbejdskunst, er du kommet til det rette sted. I denne guide vil vi introducere dig til de grundlæggende principper i hækling og give dig de nødvendige værktøjer til at komme i gang.
+                </p>   
+                <img src="img/Inspo/12.png" width="300px" alt="inspiration til hækleprojekter">
+                <a href="hækling101.html" class="om-knap">KOM I GANG HER</a>   
+        </div> 
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h5>Sociale Medier</h5>
+    <div class="icons">
+        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+
+        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+    </div>
+
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+</section>
+
+    <!-- Javascript til Menu -->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+</script>
+<script src="main.js"></script>
+</body>
+</html>

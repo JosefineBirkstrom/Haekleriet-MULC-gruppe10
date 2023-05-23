@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogstylesheet.css">
+
+    <!-- Google font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/54742bbd3d.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6779a0ad67.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+           
+           <div class="nav-links">
+   
+               <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                   <ul id="navLinks">
+                       <li><a href="forside.html">FORSIDE</a></li>
+                       <li><a href="blog.html"><strong>BLOG</strong></a></li>
+                       <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                       <li><a href="forside.html"><img src="img/Hækleriet-LOGO.png"></a> </li>
+                       <li><a href="hækling101.html">HÆKLING 101</a></li>
+                       <li><a href="inspiration.html">INSPIRATION</a></li>
+                       <li><a href="kontakt.html">KONTAKT</a></li>
+                   </ul>
+           </div>
+           
+           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+       </nav>
+</section>
+
+       <!--Blog sektion-->
+       <section id="blog">
+<div class="blog-heading">
+    <div class="blog-text">
+    <span><a href="blog.html"> <br> Blog </a> / Sådan læser du opskrifter</span>
+</div>
+<div class="blogtitle">
+    <h3>Sådan læser du opskrifter</h3>
+    </div>
+</div>
+    <div class="row">
+        <div class="video-col">
+              <p><br> Hækleopskrifter er en fantastisk måde at skabe smukke og unikke hækleprojekter på. Men for begyndere kan det være lidt udfordrende at læse og forstå hækleopskrifter korrekt. I denne blogpost vil vi guide dig gennem processen med at læse og dechifrere hækleopskrifter, så du kan komme i gang med at hækle dine egne projekter uden problemer. <br>
+                
+               <br> 1. Læsning af materialer og værktøjer: <br>
+               <br> Før du begynder at læse hækleopskriften, er det vigtigt at gennemgå de materialer og værktøjer, der er nødvendige for projektet. Kontroller om opskriften angiver hvilket garn der skal bruges, den anbefalede hæklenål størrelse og eventuelle ekstra værktøjer, som du skal have ved hånden. Sørg for at have alt det nødvendige udstyr før du går videre. <br>
+                
+               <br> 2. Forståelse af forkortelser: <br>
+               <br> Hækleopskrifter bruger ofte forkortelser for at gøre instruktionerne mere kompakte. Det er vigtigt at lære de grundlæggende forkortelser og deres betydning. Nogle almindelige forkortelser inkluderer "lm" for luftmaske, "fm" for fastmaske, "stm" for stangmaske og "dblstm" for dobbeltstangmaske. Du kan finde en liste over forkortelser i opskriftens indledning eller på internettet. <br>
+                
+               <br> 3. Gennemgang af instruktionerne: <br>
+               <br> Læs opskriftens instruktioner grundigt og visuelt gennemgå hvert trin. Vær opmærksom på gentagelser, parenteser og særlige mønstre, der kan være angivet i opskriften. Forståelse af rækkefølgen af ​​instruktionerne er afgørende for at opnå det ønskede resultat. <br>
+                
+               <br> 4. Tælle af masker og rækker: <br>
+               <br> Mange hækleopskrifter angiver antallet af masker eller rækker, der skal arbejdes. Det er vigtigt at tælle dine masker og rækker nøjagtigt for at opnå det rigtige resultat. Brug en tælletråd eller en blyant til at markere hver gentagelse og sikre dig, at du har det korrekte antal masker eller rækker i hver sektion. <br>
+                
+               <br> 5. Afprøvning og fejlfinding: <br>
+                </p>
+        </div>
+
+        <div class="standard-col">
+            <h3>Hækleopskrifter</h3>
+            <p> Hækleopskrifter er hjertet og sjælen i hækling. De guider os i vores kreative rejse og giver os mulighed for at omsætte vores visioner til virkelighed med vores hæklenål og garn. Uanset om du er nybegynder eller erfaren, er hækleopskrifter en uundværlig ressource, der åbner døren til en verden af hæklede muligheder.</p>
+            <img src="img/Opskrifter/blå-vest.png" width="300px" alt="opskrift på blå og gul vest hæklet med bedstemorfirkanter">
+                <a href="opskrifter.html" class="om-knap">LÆS OPSKRIFTER HER</a>   
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h5>Sociale Medier</h5>
+    <div class="icons">
+        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+
+        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+    </div>
+
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+</section>
+
+    <!-- Javascript til Menu -->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+</script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hækleriet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleforum.css">
+
+    <!-- Google font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/54742bbd3d.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6779a0ad67.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<section class="header">
+     <nav>
+        
+        <div class="nav-links" id="navLinks">
+
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">FORSIDE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                    <li><a href="index.html"><img src="img/Hækleriet-LOGO.png" alt="hækleriets logo der forestiller en garnnøgle med hæklenål i"></a> </li>
+                    <li><a href="hækling101.html">HÆKLING 101</a></li>
+                    <li><a href="inspiration.html">INSPIRATION</a></li>
+                    <li><a href="kontakt.html"><strong> KONTAKT </strong> </a></li>
+                </ul>
+        </div>
+        
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<title>Kontaktformular</title>
+
+<section class="skitser-overskrift">
+    <h1> Kontakt </h1>
+    <p>Har du spørgsmål til os? <br> Så send os endelig en besked, så vil vi besvare din henvendelse hurtigst muligt.</p>
+
+
+<div class="kontakt-container">
+    <form onsubmit="sendEmail(); reset(); return false">
+        <h3>Kontakt os</h3>
+        <input type="text" id="navn" placeholder="Navn" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="besked" rows="4" placeholder="Hvordan kan vi hjælpe dig?"></textarea>
+        <button type="submit">Send besked</button>
+    </form>
+</div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h5>Sociale Medier</h5>
+    <div class="icons">
+        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+
+        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+    </div>
+
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+</section>
+
+<!-- Javascript til kontaktformularen -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    function sendEmail(){
+    
+        Email.send({
+            SecureToken: "1811deb0-fe1a-48d9-92bb-29607c5d8874",
+   
+            To : 'sofiernj@gmail.com',
+            From : "sofiernj@gmail.com",
+            Subject : "Nyt Spørgsmål Fra Kontaktformular",
+            Body : "Navn: " + document.getElementById("navn").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Besked: " + document.getElementById("besked").value
+        }).then(
+    
+        message => alert("Din besked er sendt!")
+    
+        );
+    }
+</script>
+
+           <!-- Javascript til Menu -->
+           <script>
+        
+            var navLinks = document.getElementById("navLinks");
+        
+            function showMenu(){
+                navLinks.style.right = "0";
+                }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+                }
+        </script>
+        <script src="main.js"></script>
+</body>
+</html>

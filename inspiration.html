@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hækleriet</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/54742bbd3d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+           
+           <div class="nav-links" id="navLinks">
+   
+               <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                   <ul>
+                       <li><a href="index.html">FORSIDE</a></li>
+                       <li><a href="blog.html">BLOG</a></li>
+                       <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                       <li><a href="index.html"><img src="img/Hækleriet-LOGO.png" alt="hækleriets logo der forestiller en garnnøgle med en hæklenål i"></a> </li>
+                       <li><a href="hækling101.html">HÆKLING 101</a></li>
+                       <li><a href="inspiration.html"><strong> INSPIRATION </strong></a></li>
+                       <li><a href="kontakt.html">KONTAKT</a></li>
+                   </ul>
+        
+           </div>
+           
+           <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+       </nav>
+
+    </section>
+
+    <section class="skitser-overskrift">
+        <h1> Inspiration </h1>
+    </section>
+
+    <!-- skitser content -->
+        <section class="slideshow-col">
+                    <h2>Løbet tør for ideer - så frygt ej !</h2>
+                    <p>På inspirationssiden bliver der ugentligt opdateret nye spændende projekter. Alt fra potteskjulere til bamser, her vil du med sikkerhed kunne blive inspireret til dit næste hækleprojekt. <br>Scroll længere ned for af se et sneakpeak på vores instagram og se vores fine billedgalleri</p>
+                
+            <div id="slideshow1" class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1/6</div>
+                    <img src="img/Inspiration/Hæklede tasker.png" style="width: 50%;" alt="hæklede tasker ">
+                    <br><br>
+                </div>
+                <div class="foto-tekst"> <br><br> <a href="opskrifter.html" class="opskrift-knap">LÆS OPSKRIFTER HER</a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2/6</div>
+                    <img src="img/Inspiration/Hæklede bikinier.png" style="width: 50%;" alt="Billede af hæklede bamser">
+                    <br><br>
+                </div>
+                <div class="foto-tekst"> <br><br> <a href="opskrifter.html" class="opskrift-knap">LÆS OPSKRIFTER HER</a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3/6</div>
+                    <img src="img/Inspiration/Hæklede blomster.png" style="width: 50%;" alt="hæklede blomster">
+                    <br><br>
+                </div>
+                <div class="foto-tekst">  <br><br> <a href="opskrifter.html" class="opskrift-knap">LÆS OPSKRIFTER HER</a>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">4/6</div>
+                    <img src="img/Inspiration/Hæklede planteskjulere.png" style="width: 50%;" alt="hæklet planteskjuler">
+                    <br><br>
+                </div>
+                <div class="foto-tekst"> <br><br> <a href="opskrifter.html" class="opskrift-knap">LÆS OPSKRIFTER HER</a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5/6</div>
+                    <img src="img/Inspiration/Hæklede bamser.png" style="width: 50%;" alt="hæklet bamse">
+                    <br><br>
+                </div>
+                <div class="foto-tekst"><br><br> <a href="opskrifter.html" class="opskrift-knap">LÆS OPSKRIFTER HER</a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6/6</div>
+                    <img src="img/Inspiration/Hæklede tæpper.png" style="width: 50%;" alt="hæklede tæpper">
+                    <br><br>
+                </div> <br>
+                <div class="foto-tekst">  <br><br> <a href="opskrifter.html" class="opskrift-knap"> LÆS OPSKRIFTER HER</a>
+                    <br>
+                </div>
+
+                <!-- næste og tilbage knapper -->
+                    <a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+                     <!--prikkerne i bunden -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                    <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                    <span class="dot" onclick="currentSlide(6, slideshow1)"></span>
+                </div>
+            </div>
+            <br>
+        </section>
+<br><br>
+   <div class="instaoverskrift"> <h2> Et peak fra vores instagram!</h2>
+</div> 
+<br><br>
+<div class="instafeed">
+       <img src="img/instafeed.png" width="700px">
+       <img src="img/instafeed copy.png" width="600px">
+    </div>
+
+    <div class="instabtn">
+        <a href="https://www.instagram.com/haekleriet_inspiration/" class="om-knap">INSTAGRAM HER</a>      
+        </div>
+    <section>
+        <br><br> <br><br>
+           <div class="instaoverskrift"> <br> <h2>Galleri</h2></div> <br>
+<img src="img/Galleri - Hækleriet.png" width="1500px" alt="galleri af hækleprojekter">
+</section>
+<!-- Call to action -->
+<section class="cta">
+    <h1>Har du nogle spørgsmål? <br> </h1>
+        <a href="kontakt.html" class="om-knap">KONTAKT OS</a>
+</section>
+
+       
+<!-- Footer -->
+<section class="footer">
+    <h5>Sociale Medier</h5>
+    <div class="icons">
+        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+
+        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+    </div>
+
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+</section>
+
+    <!-- Javascript til Menu -->
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+            }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            }
+
+    // javascript til img slideshow
+    var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

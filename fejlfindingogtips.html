@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hækleriet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogstylesheet.css">
+
+    <!-- Google font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/54742bbd3d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<section class="sub-header">
+     <nav>
+        
+        <div class="nav-links" id="navLinks">
+
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">FORSIDE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                    <li><a href="index.html"><img src="img/Hækleriet-LOGO.png" alt="hækleriets logo der forestiller en garnnøgle"></a> </li>
+                    <li><a href="hækling101.html"><strong>HÆKLING 101</strong></a></li>
+                    <li><a href="inspiration.html">INSPIRATION</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+        </div>
+        
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<section id="blog">
+        <div class="blog-heading">
+                <div class="blog-text">
+                <span><a href="hækling101.html"> <br> Hækling 101 </a> / Fejlfinding og tips </span>
+            </div>
+        </div>
+
+    <section class="standard">
+            <br><br>
+        <h1> Fejlfinding og tips</h1>
+        <br>
+        <p>
+            Hækling er en kreativ håndarbejdsmetode, hvor du bruger en hæklenål og garn til at skabe forskellige mønstre og strukturer. Det er en afslappende og meditativ hobby, der giver dig mulighed for at skabe smukke og funktionelle genstande som tørklæder, tasker, puder og meget mere.
+            
+            Som begynder i hækling vil du først lære de grundlæggende teknikker, herunder hvordan man laver kædemasker, fastmasker, halvstangmasker og stangmasker. Disse er de primære sting, der danner grundlaget for de fleste hæklearbejder. Så frem med hæklenålen og lad os guide dig i gang!</p>
+        <div class="row">
+            <div class="standard-col">
+                <h3>Sådan læser du opskrifter</h3>
+                <p>Synes du også opskrifter kan være svære at forstå? I dette blogpost går vi i dybden med hvordan man læser hækleopskrifter.</p>
+                <br> <br>
+                <img src="img/fejl/hækleopskrifter.png" width="300px" alt="find fejl i dit hækleprojekt med denne guide">
+                    <a href="hækleopskrifterblog.html" class="om-knap">LÆS OM HÆKLEOPSKRIFTER HER</a>   
+            </div>
+
+            <div class="standard-col">
+                <h3>Meld dig ind i vores facebookgruppe!</h3>
+                <p>Bliv en del af vores hæklecommunity! I vores facebookgruppe kan man stille spørgsmål og dele sine hækleprojekter med hinanden. </p>
+                <br>
+                <p></p>
+                <img src="img/fejl/facebook gruppe.png" width="300px" alt="meld dig ind i vores facebook gruppe">
+                    <a href="https://www.facebook.com/groups/768648041405972/" class="om-knap">MELD DIG IND HER</a>   
+            </div>
+        
+            <div class="standard-col">
+                <h3>Grundlæggende hækleteknikker</h3>
+                <p> Her kan du lærer de basale masker, så du kan komme i gang med at hækle.</p>
+                <br>
+                <img src="img/masker/stangmaske.jpg" width="250px" alt="lær at lave stangmasker">
+                    <a href="hækleteknikker.html" class="om-knap">LÆS OM HÆLKLETEKNIKKER</a>   
+            </div>       
+        </div>
+
+    </section>
+</section>
+
+    <!-- Call to action -->
+
+<section class="cta">
+    <h1>Har du nogle spørgsmål? <br> </h1>
+        <a href="kontakt.html" class="om-knap">KONTAKT OS</a>
+</section>
+
+
+<!-- Footer -->
+<section class="footer">
+    <h5>Sociale Medier</h5>
+    <div class="icons">
+        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+
+        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+    </div>
+
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+</section>
+
+
+<!-- Javascript til Menu -->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+</script>
+</body>
+</html>
