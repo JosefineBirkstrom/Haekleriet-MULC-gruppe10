@@ -19,17 +19,14 @@
 </head>
 <body>
 <section class="headerbanner">
-
      <nav>
-        
         <div class="nav-links" id="navLinks">
-
-            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <i class="fa fa-times"  aria-hidden="true" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">  <strong>FORSIDE</strong> </a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="opskrifter.html">OPSKRIFTER</a></li>
-                    <li><a href="index.html"><img src="img/Hækleriet-LOGO.png" alt="hækleriets logo der forestiller en garnnøgle med en nål i"></a> </li>
+                    <li><a href="index.html"><img src="img/hækleriet-logo.png" alt="hækleriets logo der forestiller en garnnøgle med en nål i"></a> </li>
                     <li><a href="hækling101.html">HÆKLING 101</a></li>
                     <li><a href="inspiration.html">INSPIRATION</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
@@ -37,6 +34,7 @@
         </div>
         <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
     </nav>
+
 
 </section>
 
@@ -52,8 +50,8 @@
 
     <div class="row">
         <div class="video-col">
-            <video controls preload="none" loop autoplay muted ngif="img/video-portfolio.mp4">
-                <source src="Hæklerietvideo.MOV" type="video/mp4">
+            <video controls preload="none" loop autoplay muted ngif="hæklerietvideo.MOV">
+                <source src="hæklerietvideo.MOV" type="video/mp4">
             </video>
                 
         </div>
@@ -62,7 +60,7 @@
             <h3>Hækling 101</h3>
                 <p>Velkommen til Hækling 101! Hvis du er nysgerrig på hækling og ønsker at lære denne fantastiske håndarbejdskunst, er du kommet til det rette sted. I denne guide vil vi introducere dig til de grundlæggende principper i hækling og give dig de nødvendige værktøjer til at komme i gang.
                 </p>   
-                <img src="img/Inspo/12.png" width="300px" alt="inspiration til hækleprojekter">
+                <img src="img/inspo/12.png" width="300px" alt="inspiration til hækleprojekter">
                 <a href="hækling101.html" class="om-knap">KOM I GANG HER</a>   
         </div> 
     </div>
@@ -75,16 +73,16 @@
     <div class="standard-col">
         <h3>Blog</h3>
         <p> Velkommen til vores blog - det perfekte sted for hæklere i alle niveauer at få inspiration og lærer nye hækletricks. Vores blog bliver opdateret ugentligt, med nye spændende blogposts om diverse emner om hækling.
-            </p> <br> <br>
-            <img src="img/Inspo/10.png" width="300px" alt="inspiration til hækleprojekter">
-            <a href="forum.html" class="om-knap">BESØG FORUMMET HER</a>   
+            </p> <br> <br> <br>
+            <img src="img/inspo/10.png" width="300px" alt="inspiration til hækleprojekter">
+            <a href="blog.html" class="om-knap">BESØG BLOGGEN HER</a>   
     </div>
 
     <div class="standard-col">
         <h3>Inspiration</h3>
         <p>Hækleinspiration er brændstoffet, der antænder vores kreative gnist og får vores hækleprojekter til at blomstre. Det er den strøm af ideer, farver, former og mønstre, der giver os lyst til at tage vores hæklenål og garn og skabe noget unikt og smukt.
             <br> <br> <br>
-            <img src="img/Inspo/11.png" width="300px" alt="inspiration til hækleprojekt">
+            <img src="img/inspo/11.png" width="300px" alt="inspiration til hækleprojekt">
            </p>
             <a href="inspiration.html" class="om-knap">FÅ INSPIRATION HER</a>   
     </div>
@@ -112,29 +110,26 @@
 <section class="footer">
     <h5>Sociale Medier</h5>
     <div class="icons">
-        <a href="https://www.facebook.com/groups/768648041405972/"><i class="fa fa-facebook fa-xl" target="_blank"></i></a>
+        <a href="https://www.facebook.com/groups/768648041405972/" target="_blank"><i class="fa fa-facebook fa-xl"></i></a>
 
-        <a href="https://www.instagram.com/haekleriet_inspiration"><i class="fa fa-instagram fa-xl" target="_blank"></i></a>
+        <a href="https://www.instagram.com/haekleriet_inspiration" target="_blank"><i class="fa fa-instagram fa-xl"></i></a>
     </div>
 
-    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm, Sofie Nørgaard og Melanie Mortensen</p>
+    <p><br><i class="fa-regular fa-copyright"></i>2023 Josefine Birkstrøm og Sofie Nørgaard</p>
 </section>
 
 
 <!-- Javascript til Menu -->
 <script>
-    
-    var navLinks = document.getElementById("navLinks");
+
+    var navLinks = document.getElementById ("navLinks");
 
     function showMenu(){
-        navLinks.style.right = "0";
+        navLinks.style.right ="0";
         }
     function hideMenu(){
-        navLinks.style.right = "-200px";
+        navLinks.style.right ="-200px";
         }
 </script>
-
-
-
 </body>
 </html>
